@@ -16,6 +16,8 @@ Could be used both with a xib or programmatically to create a scrolling view tha
 * Custom block that is called for every visible view upon scrolling if set using the property `void(^)viewDidScrolledBlock(UIView* view, CGFloat visibility)`
 * Current item index that can be accessed by the property `currentItem`
 
+![Carousel](https://dl.dropboxusercontent.com/u/33878896/Github/carousel.png)
+
 Example:
 ```objc
     NSMutableArray* elements = [NSMutableArray arrayWithObjects:view1, view2, view3, nil];
