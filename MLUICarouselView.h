@@ -13,12 +13,12 @@ typedef void(^MLUICarouselBlock)(UIView* view, CGFloat visibility);
 @interface MLUICarouselView : UIView <UIScrollViewDelegate>
 
 // Properties
-@property NSInteger currentItem;
+@property (nonatomic) NSInteger currentItem;
 @property (nonatomic, copy) MLUICarouselBlock viewDidScrolledBlock;
 
 // Initialization
-- (id) init __attribute__((unavailable("use initWithFrame instead")));
-- (id) initWithFrame:(CGRect)frame andSelectionFrame:(CGRect)selection;
+- (instancetype) init __attribute__((unavailable("use initWithFrame instead")));
+- (instancetype) initWithFrame:(CGRect)frame andSelectionFrame:(CGRect)selection;
 - (void) setSelectionFrame:(CGRect)selection;
 
 // Elements management

@@ -14,7 +14,7 @@ Could be used both with a xib or programmatically to create a scrolling view tha
 * Single item pagination. Position for the selected item is specified via `setSelectionFrame:` or by `initWithFrame:andSelectionFrame:`
 * Looped infinite rotation for the array of UIViews provided with `setElements:`
 * Custom block that is called for every visible view upon scrolling if set using the property `void(^)viewDidScrolledBlock(UIView* view, CGFloat visibility)`
-* Current item index that can be accessed by the property `currentItem`
+* Selected item index that can be accessed and changed by the property `currentItem`
 
 ![Carousel](https://dl.dropboxusercontent.com/u/33878896/Github/carousel.png)
 
